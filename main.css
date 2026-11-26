@@ -1,19 +1,140 @@
 
+/* Existing heading styles */
 
 h1 {
-  font-size: 40px;
-  font-family: Arial
+    font-size: 40px;
+    font-family: Arial, sans-serif;
 }
+
 h2 {
-  font-size: 25px;
-  font-family: Arial
+    font-size: 25px;
+    font-family: Arial, sans-serif;
 }
+
 h3 {
-  font-family: Arial
+    font-family: Arial, sans-serif;
 }
+
 p {
-  font-size: 14px;
-  font-family: Arial
+    font-size: 14px;
+    font-family: Arial, sans-serif;
 }
 
+/* Unit details section */
 
+.unit-section {
+    margin-top: 30px;
+    font-family: Arial, sans-serif;
+}
+
+.unit-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    border-bottom: 3px solid #087F80;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.unit-heading h2 {
+    margin: 5px 0;
+    color: #263B43;
+}
+
+.eyebrow {
+    color: #087F80;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+.unit-subtitle {
+    color: #555;
+    font-size: 15px;
+    margin: 5px 0;
+}
+
+.unit-code {
+    background-color: #087F80;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+/* Table container */
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    border: 1px solid #dce4e4;
+    border-radius: 10px;
+}
+
+/* Table styling */
+
+.unit-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+}
+
+.unit-table th,
+.unit-table td {
+    padding: 16px;
+    text-align: left;
+    border-bottom: 1px solid #dce4e4;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.unit-table th {
+    width: 35%;
+    background-color: #edf4f4;
+    color: #23434A;
+    font-weight: bold;
+}
+
+.unit-table td {
+    color: #333;
+    background-color: white;
+}
+
+/* Alternate row colours */
+
+.unit-table tr:nth-child(even) td {
+    background-color: #f5f8f8;
+}
+
+.unit-table tr:nth-child(even) th {
+    background-color: #e5eeee;
+}
+
+/* Remove bottom border from last row */
+
+.unit-table tr:last-child th,
+.unit-table tr:last-child td {
+    border-bottom: none;
+}
+
+/* Responsive design */
+
+@media (max-width: 600px) {
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .unit-table th,
+    .unit-table td {
+        padding: 10px;
+        font-size: 13px;
+    }
+
+    .unit-table th {
+        width: 40%;
+    }
+}
